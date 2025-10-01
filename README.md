@@ -1,10 +1,8 @@
 # UPC Counter Application
 
+[English Manual](#english-manual) | [한글 매뉴얼](#한글-매뉴얼)
+
 A desktop application built with **Python (PyQt6, pandas, openpyxl)** for scanning and managing UPC codes with Excel import/export support.
-
----
-
-## 📖 [한글 매뉴얼](#korean-manual)
 
 ---
 
@@ -49,7 +47,7 @@ A desktop application built with **Python (PyQt6, pandas, openpyxl)** for scanni
 
 ---
 
-## 📖 한글 매뉴얼 {#korean-manual}
+## 📖 한글 매뉴얼
 
 ### 주요 기능
 - **엑셀 불러오기(Open)**: `.xlsx` 파일에서 UPC/수량 데이터를 불러옵니다.  
