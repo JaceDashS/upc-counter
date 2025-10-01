@@ -95,10 +95,12 @@ class MainWindow(QMainWindow):
         self.addToolBar(tb)
 
         # Import
-        act_import = QAction("Open Excel", self)
-        act_import.setShortcut(QKeySequence("Ctrl+I"))
-        act_import.triggered.connect(self.on_import_excel)
-        tb.addAction(act_import)
+        act_open = QAction("Open Excel", self)
+        act_open.setShortcut(QKeySequence("Ctrl+O"))
+        # act_open.setShortcutContext(Qt.ShortcutContext.ApplicationShortcut)  # ✅ 포커스 무관
+        act_open.triggered.connect(self.on_import_excel)
+        tb.addAction(act_open)
+        self.addAction(act_open)  # ✅ 윈도우 레벨에 등록
 
         # Save (현재 파일에 저장)
         act_save = QAction("Save", self)
